@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 8%;
+    padding: 1.5rem 9%;
     background: rgba(5, 8, 15, 0.85);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid var(--glass-border);
