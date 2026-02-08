@@ -19,7 +19,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    IMAGE_TAG = "${BUILD_NUMBER}"
+                    IMAGE_TAG = "${BUILD_NUMBER}.0"
                     sh "docker build -t $DOCKER_IMAGE:$IMAGE_TAG ."
                 }
             }
