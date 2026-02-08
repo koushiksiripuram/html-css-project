@@ -42,6 +42,7 @@ pipeline {
                                                  usernameVariable: 'GIT_USER',
                                                  passwordVariable: 'GIT_PASS')]) {
                     sh """
+                    rm -rf gitops
                     git clone https://$GIT_USER:$GIT_PASS@${GITOPS_REPO.replace('https://','')} gitops
                     cd gitops
                     sed -i 's|image: .*|image: $DOCKER_IMAGE:$IMAGE_TAG|' $MANIFEST_PATH
