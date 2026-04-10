@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "koushiksiripuram/html-argocd"
-        GITOPS_REPO = "https://github.com/koushiksiripuram/html-argocd-css.git"
+        GITOPS_REPO = "https://github.com/koushiksiripuram/argocd.git"
         GITOPS_BRANCH = "main"
         MANIFEST_PATH = "dev/deployment.yaml"
     }
